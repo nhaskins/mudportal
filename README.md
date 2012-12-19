@@ -64,7 +64,7 @@ Notes about rendering ansi:
 - More likley, you may have to adjust a few things to get it rendering just right.
 
 
-Short term goals:
+Short term goals (terminal media):
 =========
 I could use some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
 and match URL's to replace URL's with their appropriate tags.
