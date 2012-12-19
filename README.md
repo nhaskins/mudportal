@@ -45,7 +45,9 @@ Easymode:
   <strong>   var mud    = {address: 'eotl.org', port: 2010}</strong><br/><br/>
   with your MUD's address and port information.<br/>
 <br/>
-  Load index.html in your browser. It will use the mudportal.nodejitsu.com server.
+- Load index.html in your browser. It will use the mudportal.nodejitsu.com server to automagically<br/>
+  being the faux terminal featuring your MUD.
+  
 
 Self hosted mode:
 - Using your own instance of node.js on a server, take the files from /server and copy
