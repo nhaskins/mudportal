@@ -7,8 +7,8 @@ Demo: http://haskins.it/eotl
 
 
 This repo has two main things in it:
-1) a front end interface to quickly create an HTML5 faux terminal for playing a MUD
-2) a node.js server that can setup the plumbing to make said connection happen using socket.io
+- a front end interface to quickly create an HTML5 faux terminal for playing a MUD
+- a node.js server that can setup the plumbing to make said connection happen using socket.io
 
 
 What's this project do?
@@ -70,3 +70,6 @@ tricky.  The render file does have (commented out at the moment) hyperlink match
 video matching.  It looks pretty amazing to get a hyperlink from a friend on a MUD and have it just render
 and image or video on the spot, in the 'terminal' ('cept when you get trolled).  Sepaking of that, I'd like to add
 some simple features to enable/disable/click-confirm the auto replacement of said media elements.
+
+
+<img src="https://twitter.com/nhaskins/status/281218074823254016/photo/1"/>
