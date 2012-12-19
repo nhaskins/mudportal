@@ -14,14 +14,16 @@ This repo has two main things in it:
 How does Mudportal work?
 =======================
 
-Essentially, it does 2 things:
+<strong>The Mudportal Server:</strong><br/>
+<em>Middle mans the data between a MUD and a faux terminal</em>
 
-(the node server)
 - server.js is given an address by the front end sockets.js file.
 - server.js opens a connection to the address
 - server.js pipes data back and forth between the telnet session, and the web browser using socket.io
 
-(the web browser)
+<strong>The faux terminal:</strong><br/>
+<em>The interface to the MUD from your web browser</em>
+
 - index.html has a bunch of styles and stuff that make it looks like a terminal
 - the socket.js file kicks in, and tells the server to open up a connection to le MUD
   -socket.js needs to be given a telnet address.
@@ -34,12 +36,10 @@ Essentially, it does 2 things:
 - The user can respond back with the handy prompt at the bottom of the page.  Input is piped back to the telnet
   session via sockets.js -> server.js -> telnet ... the whole thing keeps repeating.
 
+How to use Mudportal:
+=========
 
-Demo: http://haskins.it/eotl
-
-How to use it:
-
-Easymode:
+<strong>Easymode (just a faux terminal):</strong>
 - Put the contents of the web/ folder on your server.
 - Open the js/sockets.js file in an editor and update this line:<br/><br/>
   <strong>   var mud    = {address: 'eotl.org', port: 2010}</strong><br/><br/>
@@ -49,7 +49,7 @@ Easymode:
   being the faux terminal featuring your MUD.
   
 
-Self hosted mode:
+<strong>Self hosted Mudportal:</strong>
 - Using your own instance of node.js on a server, take the files from /server and copy
   them to a directory.
 - do 'npm install', it will install all the dependencies found in the package.json file.
@@ -64,11 +64,13 @@ Notes about rendering ansi:
 - More likley, you may have to adjust a few things to get it rendering just right.
 
 
-Short term goals (terminal media):
+Short term goals:
 =========
-I could use some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
-and match URL's to replace URL's with their appropriate tags.
-
+<strong>Faux terminal hyperlink rendering:</strong><br/>
+I could use some help working on the ansi_render.js file.  
+<br/>
+Pretty much I'm hacking away on regex to try and match URL's to replace URL's with their appropriate tags.
+<br/>
 I have a crummy implimentaiton of inline hyperlinking working.. the problem is I have yet to figure out
 how to match URL's decently over 2 lines.  These telnet connections send long strings over 2 lines.  Kinda
 tricky.  The render file does have (commented out at the moment) hyperlink matching, image matching, and youtube
