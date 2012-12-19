@@ -41,8 +41,8 @@ How to use it:
 
 Easymode:
 - Put the contents of the web/ folder on your server.
-- Open the js/sockets.js file in an editor and update this line:<br/>
-     var mud    = {address: 'eotl.org', port: 2010}<br/>
+- Open the js/sockets.js file in an editor and update this line:<br/><br/>
+  <strong>   var mud    = {address: 'eotl.org', port: 2010}</strong><br/><br/>
   with your MUD's address and port information.<br/>
 <br/>
   Load index.html in your browser. It will use the mudportal.nodejitsu.com server.
@@ -57,7 +57,8 @@ Self hosted mode:
 Notes about rendering ansi:
 =========
 - The default ansi rendering (found in js/ansi_render.js) is setup for the
-  EOTL mud.  Your mud may use similar ansi encoding, so it may 'just work'.  
+  EOTL mud.  
+- Your MUD may use similar ansi encoding, so it may 'just work'.  
 - More likley, you may have to adjust a few things to get it rendering just right.
 
 
