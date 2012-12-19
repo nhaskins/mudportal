@@ -70,8 +70,8 @@ and match URL's to replace URL's with their appropriate tags.
 I have a crummy implimentaiton of inline hyperlinking working.. the problem is I have yet to figure out
 how to match URL's decently over 2 lines.  These telnet connections send long strings over 2 lines.  Kinda
 tricky.  The render file does have (commented out at the moment) hyperlink matching, image matching, and youtube
-video matching.  It looks pretty amazing to get a hyperlink from a friend on a MUD and have it just render
-and image or video on the spot, in the 'terminal' ('cept when you get trolled).  Sepaking of that, I'd like to add
+video matching.  It looks pretty amazing to get a hyperlink from a friend on a MUD and have it  render
+as an image or video on the spot, in the 'terminal' ('cept when you get trolled).  Sepaking of that, I'd like to add
 some simple features to enable/disable/click-confirm the auto replacement of said media elements.
 
 
