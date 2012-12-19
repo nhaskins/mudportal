@@ -3,12 +3,12 @@ Mudportal
 
 Mudding in a browser. 
 <br/>
-Demo: http://haskins.it/eotl
-
+Demo:  http://haskins.it/eotl<br/>
+Image: https://twitter.com/nhaskins/status/281218074823254016/photo/1<br/>
 
 This repo has two main things in it:
-1) a front end interface to quickly create an HTML5 faux terminal for playing a MUD
-2) a node.js server that can setup the plumbing to make said connection happen using socket.io
+- a front end interface to quickly create an HTML5 faux terminal for playing a MUD
+- a node.js server that can setup the plumbing to make said connection happen using socket.io
 
 
 What's this project do?
@@ -45,7 +45,7 @@ Easymode:
      var mud    = {address: 'eotl.org', port: 2010}
   with your MUD's address and port information.
 
-  Load index.html in your browser. It will use the default connection nodejitsu server i've got running.
+  Load index.html in your browser. It will use the mudportal.nodejitsu.com server.
 
 Self hosted mode:
 - Using your own instance of node.js on a server, take the files from /server and copy
@@ -55,13 +55,15 @@ Self hosted mode:
 - update the web/js/sockets.js file to point to your own node.js server instead of mudportal.nodejitsu.com
 
 Notes about rendering ansi:
-
+=========
 - The default ansi rendering (found in js/ansi_render.js) is setup for the
-  EOTL mud.  Your mud may use similar ansi encoding, so it may just work.  It may require tweaks
-  so have fun hacking on that file.
+  EOTL mud.  Your mud may use similar ansi encoding, so it may 'just work'.  
+- More likley, you may have to adjust a few things to get it rendering just right.
 
 
-I really need some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
+Short term goals:
+=========
+I could use some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
 and match URL's to replace URL's with their appropriate tags.
 
 I have a crummy implimentaiton of inline hyperlinking working.. the problem is I have yet to figure out
@@ -70,3 +72,6 @@ tricky.  The render file does have (commented out at the moment) hyperlink match
 video matching.  It looks pretty amazing to get a hyperlink from a friend on a MUD and have it just render
 and image or video on the spot, in the 'terminal' ('cept when you get trolled).  Sepaking of that, I'd like to add
 some simple features to enable/disable/click-confirm the auto replacement of said media elements.
+
+
+
