@@ -3,8 +3,8 @@ Mudportal
 
 Mudding in a browser. 
 <br/>
-Demo: http://haskins.it/eotl
-
+Demo:  http://haskins.it/eotl<br/>
+Image: https://twitter.com/nhaskins/status/281218074823254016/photo/1<br/>
 
 This repo has two main things in it:
 - a front end interface to quickly create an HTML5 faux terminal for playing a MUD
@@ -45,7 +45,7 @@ Easymode:
      var mud    = {address: 'eotl.org', port: 2010}
   with your MUD's address and port information.
 
-  Load index.html in your browser. It will use the default connection nodejitsu server i've got running.
+  Load index.html in your browser. It will use the mudportal.nodejitsu.com server.
 
 Self hosted mode:
 - Using your own instance of node.js on a server, take the files from /server and copy
@@ -61,7 +61,7 @@ Notes about rendering ansi:
   so have fun hacking on that file.
 
 
-I really need some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
+I could use some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
 and match URL's to replace URL's with their appropriate tags.
 
 I have a crummy implimentaiton of inline hyperlinking working.. the problem is I have yet to figure out
@@ -72,4 +72,4 @@ and image or video on the spot, in the 'terminal' ('cept when you get trolled). 
 some simple features to enable/disable/click-confirm the auto replacement of said media elements.
 
 
-<img src="https://twitter.com/nhaskins/status/281218074823254016/photo/1"/>
+
