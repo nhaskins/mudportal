@@ -55,12 +55,14 @@ Self hosted mode:
 - update the web/js/sockets.js file to point to your own node.js server instead of mudportal.nodejitsu.com
 
 Notes about rendering ansi:
-
+=========
 - The default ansi rendering (found in js/ansi_render.js) is setup for the
-  EOTL mud.  Your mud may use similar ansi encoding, so it may just work.  It may require tweaks
-  so have fun hacking on that file.
+  EOTL mud.  Your mud may use similar ansi encoding, so it may 'just work'.  
+- More likley, you may have to adjust a few things to get it rendering just right.
 
 
+Short term goals:
+=========
 I could use some help working on the ansi_render.js file.  Pretty much I'm hacking away on regex to try
 and match URL's to replace URL's with their appropriate tags.
 
