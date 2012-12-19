@@ -11,7 +11,7 @@ This repo has two main things in it:
 - a node.js server that can setup the plumbing to make said connection happen using socket.io
 
 
-What's this project do?
+How does Mudportal work?
 =======================
 
 Essentially, it does 2 things:
