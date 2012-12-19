@@ -41,10 +41,10 @@ How to use it:
 
 Easymode:
 - Put the contents of the web/ folder on your server.
-- Open the js/sockets.js file in an editor and update this line:
-     var mud    = {address: 'eotl.org', port: 2010}
-  with your MUD's address and port information.
-
+- Open the js/sockets.js file in an editor and update this line:<br/>
+     var mud    = {address: 'eotl.org', port: 2010}<br/>
+  with your MUD's address and port information.<br/>
+<br/>
   Load index.html in your browser. It will use the mudportal.nodejitsu.com server.
 
 Self hosted mode:
