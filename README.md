@@ -1,10 +1,9 @@
+
+
 Mudportal
 =========
 
 Mudding in a browser.
-
-Demo:  http://haskins.it/eotl<br/>
-Image: https://twitter.com/nhaskins/status/281218074823254016/photo/1<br/>
 
 This repo has two main things in it:
 - a front end interface to quickly create an HTML5 faux terminal for playing a MUD
